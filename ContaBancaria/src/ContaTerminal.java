@@ -43,11 +43,12 @@ public class ContaTerminal {
 
         return String.format("\nOlá %S, " +
                 "obrigado por criar uma conta em nosso banco, sua agência é %s, " +
-                "conta %d e seu saldo %.2f já está disponível para saque.", titular.getName(), geradoAgencia(), geradoNumero(), saldo);
+                "conta %d e seu saldo %.2f já está disponível para saque.", titular.getName(),getAgencia(),getNumeroConta(), saldo);
     }
 
     @Override
     public String toString() {
         return String.format("Name:%s | Agência:%s | Numero: %d | Saldo: R$:%.2f",titular.getName(), agencia, numeroConta, saldo);
     }
+
 }
